@@ -1,0 +1,73 @@
+.container{
+  display: grid;
+    width: 100%;
+    height: 115vw;
+    margin: auto;
+    grid-template-columns: 20px 200px 200px;
+    grid-template-rows: 290px 340px 300px 100px;
+    grid-gap: 5px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd hd"
+    "ct ct ct ct ct ct ct ct ct ct"
+    "sd sd sd sd ft ft ft ft ft ft";
+    border: 3px solid #A52A2A;
+    justify-content: center;
+    padding: 15px;
+}
+.box{
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #ff9a00;
+  margin: 20px;
+  padding: 15px;
+  width: 800px;
+  height: 300px;
+}
+#header{
+grid-area: hd;
+background-image: url("woman.jpg");
+background-size: cover;
+}
+#content{
+grid-area: ct;
+justify-content: center;
+}
+#footer{
+grid-area: ft;
+background-color: antiquewhite;
+}
+#sidebar{
+  grid-area: sd;
+}
+.accounts{
+display: grid;
+width: 270px;
+height: 125px;
+margin: 30px;
+grid-template-columns: 120px 120px;
+grid-template-rows: 50px 50px;
+grid-gap: 5px;
+justify-content: center;
+}
+.social{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 2px solid #ff9a00;
+margin: 10px;
+padding: 5px;
+width: 100px;
+height: 40px;
+}
+#faceb{
+grid-area: 1/1/1/1;
+}
+#twitt{
+grid-area: 1/2/1/2;
+}
+#insta{
+grid-area: 2/1/2/1;
+}
+}#tik{
+grid-area: 2/2/2/2;
+}
